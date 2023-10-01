@@ -1,4 +1,6 @@
 import 'package:eccomerce_app/constants/asset_images.dart';
+import 'package:eccomerce_app/constants/routes.dart';
+import 'package:eccomerce_app/screens/auth_ui/login/login.dart';
 import 'package:eccomerce_app/widgets/primary_button/primary_button.dart';
 import 'package:eccomerce_app/widgets/top_titles/top_titles.dart';
 import 'package:flutter/cupertino.dart';
@@ -17,7 +19,8 @@ class Welcome extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TopTitles(),
+            const TopTitles(
+                subtitle: 'buy any item from using app', title: 'Welcome'),
             SizedBox(
               height: screenHeight / 16,
             ),
@@ -65,7 +68,9 @@ class Welcome extends StatelessWidget {
             ),
             PrimaryButton(
               title: "Login",
-              onPress: () {},
+              onPress: () {
+                Routes.instance.push(widget: const Login(), context: context);
+              },
             ),
             SizedBox(
               height: screenHeight / 30,

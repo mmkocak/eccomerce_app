@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
 class TopTitles extends StatelessWidget {
-  const TopTitles({super.key});
+  final String title, subtitle;
+  const TopTitles({super.key, required this.title, required this.subtitle});
 
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           height: kToolbarHeight + screenWidth / 90,
         ),
         Text(
-          "Welcome",
+          title,
           style: TextStyle(
             fontSize: screenWidth / 12,
             fontWeight: FontWeight.bold,
@@ -23,7 +25,7 @@ class TopTitles extends StatelessWidget {
           height: screenHeight / 80,
         ),
         Text(
-          "Buy any item from using app",
+          subtitle,
           style: TextStyle(fontSize: screenWidth / 30),
         ),
       ],
