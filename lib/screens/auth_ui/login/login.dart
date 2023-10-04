@@ -11,9 +11,8 @@ class Login extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         //Appbar
-        toolbarHeight: MediaQuery.of(context).size.height * 0.06,
-        //backgroundColor: Colors.transparent,
-        backgroundColor: Colors.red,
+        toolbarHeight: MediaQuery.of(context).size.height * 0.01,
+        backgroundColor: Colors.transparent,
         elevation: 0,
       ),
       body: const Padding(
