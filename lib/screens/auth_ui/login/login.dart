@@ -22,14 +22,17 @@ class Login extends StatelessWidget {
           right: 10.0,
           top: 0.0,
         ),
-        child: Column(children: [
-          ArrowBackButton(),
-          TopTitles(
-            title: "Login",
-            subtitle: "Welcome back to yyü",
-          ),
-          //TextField(),
-        ]),
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              ArrowBackButton(),
+              TopTitles(
+                title: "Login",
+                subtitle: "Welcome back to yyü",
+              ),
+              //TextField(),
+            ]),
       ),
     );
   }
