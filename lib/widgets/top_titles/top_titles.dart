@@ -10,7 +10,7 @@ class TopTitles extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.only(left: 15),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
@@ -24,7 +24,7 @@ class TopTitles extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: screenHeight / 50,
+            height: screenHeight / 70,
           ),
           Text(
             subtitle,
