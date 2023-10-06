@@ -15,8 +15,8 @@ class Login extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: const Padding(
-        padding: EdgeInsets.only(
+      body: Padding(
+        padding: const EdgeInsets.only(
           left: 10.0,
           right: 10.0,
           top: 0.0,
@@ -25,11 +25,12 @@ class Login extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            ArrowBackButton(),
-            TopTitles(
+            const ArrowBackButton(),
+            const TopTitles(
               title: "Login",
               subtitle: "Welcome back to yyü",
             ),
+            TextFormField(),
           ],
         ),
       ),
